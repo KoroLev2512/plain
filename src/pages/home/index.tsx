@@ -3,7 +3,7 @@ import { Header } from "@/features/Header";
 import { Options } from "@/features/Options";
 
 
-export const Index: React.FC = () => {
+const HomePage: React.FC = () => {
     return (
         <>
             <Header/>
@@ -11,3 +11,5 @@ export const Index: React.FC = () => {
         </>
     );
 }
+
+export default HomePage;

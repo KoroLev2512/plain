@@ -1,11 +1,11 @@
 import React from "react";
-import { Index } from "@/pages/home";
+import HomePage from "@/pages/home";
 
 
 const App = () =>{
 
     return (
-        <Index/>
+        <HomePage/>
     )
 }
 
