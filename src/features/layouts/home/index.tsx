@@ -1,6 +1,6 @@
 import React from 'react';
-import { Header } from "@/features/Header";
-import { Options } from "@/features/Options";
+import { Header } from "../../../entities/Header";
+import { Options } from "../../../entities/Options";
 
 
 export const HomePage: React.FC = () => {

@@ -1,6 +1,6 @@
 import React from 'react';
 import {Text} from "@/shared/ui/Text"
-import {Header} from "@/features/Header";
+import {Header} from "../../entities/Header";
 import Image from "next/image";
 
 import styles from "./styles.module.scss";
