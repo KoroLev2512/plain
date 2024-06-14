@@ -1,0 +1,73 @@
+@font-face {
+  font-family: "Regular";
+  src: url("../../public/fonts/SF-Pro-Display-Regular.otf");
+}
+
+@font-face {
+  font-family: "Medium";
+  src: url("../../public/fonts/SF-Pro-Display-Medium.otf");
+}
+
+@font-face {
+  font-family: "Semibold";
+  src: url("../../public/fonts/SF-Pro-Display-Semibold.otf");
+}
+
+@font-face {
+  font-family: "Bold";
+  src: url("../../public/fonts/SF-Pro-Display-Bold.otf");
+}
+
+.sf-pro-regular {
+  font-family: "SF-Pro-Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sf-pro-medium {
+  font-family: "SF-Pro-Display", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.sf-pro-semibold {
+  font-family: "SF-Pro-Display", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.sf-pro-bold {
+  font-family: "SF-Pro-Display", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+body {
+  display: block;
+  margin: 0;
+  box-sizing: border-box;
+  background: radial-gradient(166.37% 160.88% at -12.31% 11.32%, #00237D 6.22%, #4596C2 52.77%, rgba(202, 254, 254, 0.77) 79.59%, #F2C4E8 100%), #000;  font-size: 16px;
+  font-style: normal;
+  overflow: auto;
+  height: 100vh;
+}
+
+:root {
+  --primary-background-color: #f5f8f9;
+
+  --white-color: #fff;
+  --gray-color: #73848c;
+  --black-color: #000000;
+  --sucess-color: #0da600;
+  --warning-color: #ed0b0b;
+}
+
+input:disabled {
+  background-color: var(--input-disabled-bg);
+  color: var(--input-color-text);
+}
+
+a {
+  text-decoration: none;
+}
