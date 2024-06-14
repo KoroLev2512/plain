@@ -49,10 +49,9 @@ body {
   display: block;
   margin: 0;
   box-sizing: border-box;
-  background: radial-gradient(166.37% 160.88% at -12.31% 11.32%, #00237D 6.22%, #4596C2 52.77%, rgba(202, 254, 254, 0.77) 79.59%, #F2C4E8 100%), #000;  font-size: 16px;
   font-style: normal;
   overflow: auto;
-  height: 100vh;
+  background: radial-gradient(166.37% 160.88% at -12.31% 11.32%, #00237D 6.22%, #4596C2 52.77%, rgba(202, 254, 254, 0.77) 79.59%, #F2C4E8 100%), #000 fixed;
 }
 
 :root {

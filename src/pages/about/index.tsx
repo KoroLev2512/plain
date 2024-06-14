@@ -97,7 +97,8 @@ const About = () => {
                     <div className={styles.div6}>
                         <div className={styles.contacts}>
                             <Text className={styles.textContacts}>
-                                Got any questions? Mail us! Michael@plaintrips.com
+                                Got any questions? Mail us!<br/>
+                                Michael@plaintrips.com
                             </Text>
                         </div>
                         <div className={styles.free}>
