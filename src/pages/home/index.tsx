@@ -3,7 +3,7 @@ import { Header } from "@/features/Header";
 import { Options } from "@/features/Options";
 
 
-const HomePage: React.FC = () => {
+export const HomePage: React.FC = () => {
     return (
         <>
             <Header/>
@@ -11,5 +11,3 @@ const HomePage: React.FC = () => {
         </>
     );
 }
-
-export default HomePage;
