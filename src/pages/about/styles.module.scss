@@ -1,3 +1,7 @@
+@import "@/styles/variables.scss";
+@import "@/styles/colors.scss";
+@import "@/styles/mixins.scss";
+
 .wrapper {
   display: grid;
   align-items: stretch;
@@ -50,10 +54,9 @@
 .item {
   display: flex;
   align-items: flex-start;
-  font-family: "SF Pro Display", serif;
-  font-size: 40px;
+  font-family: UltraLight, serif;
   font-style: normal;
-  font-weight: 200;
+  font-size: 40px;
   line-height: 90%;
   position: relative;
   box-sizing: border-box;
