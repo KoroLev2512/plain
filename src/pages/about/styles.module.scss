@@ -117,8 +117,8 @@
 
 .textContacts {
   display: flex;
-  align-items: end;
-  margin: 40px 20px 40px 40px;
+  align-items: flex-end;
+  margin: 40px;
   color: white;
   font-family: UltraLight, sans-serif;
   font-size: 40px;
@@ -171,9 +171,30 @@
   }
 
   .div5 {
-    display: none;
+    grid-area: 6 / 1 / 7 / 2;
   }
+
   .div6 {
-    display: none;
+    display: flex;
+    flex-direction: column-reverse;
+    grid-area: 7 / 1 / 8 / 2;
+    min-width: 250px;
+  }
+
+  .free {
+    display: grid;
+    grid-area: 1 / 1 / 2 / 2;
+    max-width: 720px;
+  }
+
+  .textContacts {
+    display: flex;
+    align-items: flex-start;
+    font-size: 28px;
+  }
+
+  .contacts {
+    display: grid;
+    grid-area: 2 / 1 / 3 / 2;
   }
 }
