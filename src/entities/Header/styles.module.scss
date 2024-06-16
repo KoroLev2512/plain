@@ -4,7 +4,7 @@
   align-items: flex-end;
   border-bottom: solid white 1px;
   margin: 20px;
-  min-height: 85px;
+  height: 85px;
 }
 
 .logo {
@@ -30,4 +30,36 @@
   padding-bottom: 11px;
   color: white;
   cursor: pointer;
+}
+
+@media (max-width: 540px) {
+  .wrapper {
+    margin: 20px 10px;
+    min-height: 85px;
+  }
+
+  .logo {
+    margin-left: 0;
+  }
+
+  .button_item {
+    padding-left: 73px;
+  }
+}
+
+@media (max-width: 440px) {
+  .button_item {
+    padding-left: 40px;
+  }
+}
+
+@media (max-width: 370px) {
+  .buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
 }

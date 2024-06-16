@@ -119,7 +119,7 @@
 .textContacts {
   display: flex;
   align-items: end;
-  margin-left: 40px;
+  margin: 40px 20px 40px 40px;
   color: white;
   font-family: UltraLight, sans-serif;
   font-size: 40px;
@@ -138,4 +138,30 @@
   padding: 30px;
   max-width: 200px;
   user-select: none;
+}
+
+@media (max-width: 1300px) {
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .div5 {
+    display: none;
+  }
+
+  .div6 {
+    display: none;
+  }
+
+  .free {
+    display: none;
+  }
+}
+
+@media (max-width: 540px) {
+  .wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
 }
