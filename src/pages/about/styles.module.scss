@@ -53,7 +53,6 @@
   position: relative;
   box-sizing: border-box;
   padding: 0;
-
   user-select: none;
   margin: 0 0 100px 0;
 }
@@ -147,7 +146,12 @@
   }
 
   .div5 {
-    display: none;
+    min-width: 0;
+    grid-area: 3 / 2 / 4 / 3;
+  }
+
+  .item {
+    margin: 0 0 50px 0;
   }
 
   .div6 {
@@ -163,5 +167,9 @@
   .wrapper {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr);
+  }
+
+  .div5 {
+    display: none;
   }
 }
