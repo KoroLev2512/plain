@@ -1,7 +1,7 @@
 import React from "react";
 import {HomePage} from "@/features/layouts/home";
 
-import '@/styles/globals.scss';
+import '../styles/globals.scss';
 
 const App = () =>{
 
