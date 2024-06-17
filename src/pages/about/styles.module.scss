@@ -145,6 +145,14 @@
   user-select: none;
 }
 
+@media (max-width: 1675px) {
+  .cardList {
+    justify-content: center;
+    gap: 5px;
+    margin: 20px 0 0 0;
+  }
+}
+
 @media (max-width: 1300px) {
   .wrapper {
     grid-template-columns: repeat(2, 1fr);
@@ -167,10 +175,6 @@
 
   .free {
     max-width: 250px;
-  }
-
-  .cardList {
-    justify-content: center;
   }
 }
 
