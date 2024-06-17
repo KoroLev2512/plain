@@ -89,9 +89,10 @@
 .cardList {
   display: flex;
   align-items: flex-end;
-  flex-wrap: wrap;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 47px 0 0 0;
+  gap: 7.5px;
 }
 
 .cardLabel {
@@ -166,6 +167,10 @@
 
   .free {
     max-width: 250px;
+  }
+
+  .cardList {
+    justify-content: center;
   }
 }
 
