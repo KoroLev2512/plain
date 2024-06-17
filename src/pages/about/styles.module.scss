@@ -115,6 +115,11 @@
   width: 100%;
 }
 
+.contactsMobile {
+  display: flex;
+  align-items: flex-end;
+}
+
 .textContacts {
   display: flex;
   align-items: flex-end;
@@ -179,6 +184,7 @@
     flex-direction: column-reverse;
     grid-area: 7 / 1 / 8 / 2;
     min-width: 250px;
+    margin: 0;
   }
 
   .free {
@@ -189,12 +195,17 @@
 
   .textContacts {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
     font-size: 28px;
+    width: 100%;
+    line-height: 1.5;
   }
 
   .contacts {
-    display: grid;
-    grid-area: 2 / 1 / 3 / 2;
+    display: flex;
+    justify-content: center;
+    margin-left: -10px;
+    border: none;
   }
 }

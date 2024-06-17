@@ -96,11 +96,13 @@ const About = () => {
                     </div>
                     <div className={styles.div6}>
                         <div className={styles.contacts}>
-                            <Text className={styles.textContacts}>
-                                Got any questions? <br/>
-                                Mail us!<br/>
-                                Michael@plaintrips.com
-                            </Text>
+                            <div className={styles.contactsMobile}>
+                                <Text className={styles.textContacts}>
+                                    Got any questions? <br/>
+                                    Mail us!<br/>
+                                    Michael@plaintrips.com
+                                </Text>
+                            </div>
                         </div>
                         <div className={styles.free}>
                             <Text as="h2" className={styles.item}>
