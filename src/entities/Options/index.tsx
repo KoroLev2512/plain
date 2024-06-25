@@ -6,7 +6,7 @@ import {Input} from "@/shared/ui/Input";
 import styles from "./styles.module.scss";
 import {PrimaryButton} from "@/shared/ui/Button";
 
-export const Options = ({ children, name }: { children: JSX.Element, name: string }) => {
+export const Options = ({ name }: { name: string }) => {
     return (
         <div className={styles.wrapper}>
             <Text className={styles.text}>
