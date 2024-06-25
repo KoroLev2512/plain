@@ -6,7 +6,7 @@ import {Input} from "@/shared/ui/Input";
 import styles from "./styles.module.scss";
 import {PrimaryButton} from "@/shared/ui/Button";
 
-export const Options = () => {
+export const Options = ({ children, name }: { children: JSX.Element, name: string }) => {
     return (
         <div className={styles.wrapper}>
             <Text className={styles.text}>
@@ -16,19 +16,19 @@ export const Options = () => {
                 className={styles.destination}
                 placeholder="e.g. Rome or Florida"
                 label="Enter destination"
-                children={null}
+                children={name}
             />
             <Input
                 className={styles.interests}
                 placeholder="e.g. Photoblogging, Art, Museums"
                 label="Enter your interests"
-                children={null}
+                children={name}
             />
             <Input
                 className={styles.duration}
                 placeholder="e.g 5"
                 label="Trip duration"
-                children={null}
+                children={name}
             />
 
             <div className={styles.preferences}>
