@@ -1,8 +1,133 @@
 .wrapper {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   margin: 38px 20px;
   min-height: 104px;
   background: rgba(255, 255, 255, 0.80);
   border-radius: 30px;
+  user-select: none;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-family: Light, sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: uppercase;
+  margin: 25px 17px;
+}
+
+.destination {
+  font-family: Light, sans-serif;
+  font-weight: 400;
+  margin: 0 30px;
+  color: var(--input-color-text);
+  min-width: 150px;
+}
+
+.interests {
+  font-family: Light, sans-serif;
+  font-weight: 400;
+  color: var(--input-color-text);
+  width: auto;
+  min-width: 230px;
+}
+
+.duration {
+  font-family: Light, sans-serif;
+  font-weight: 400;
+  color: var(--input-color-text);
+  margin: 0 30px;
+}
+
+.preferences {
+  font-family: Light, sans-serif;
+  font-weight: 400;
+  color: var(--input-color-text);
+}
+
+.tooltip {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.checkbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px;
+  gap: 5px;
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-self: flex-end;
+  padding: 15px 48px;
+  margin: 10px;
+}
+
+.firstLine {
+  margin: 0 10px;
+}
+
+@media (max-width: 720px) {
+  .wrapper {
+    display: flex;
+    border-radius: 30px 30px 0 0;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    position: fixed;
+    bottom: 0;
+  }
+
+  .text {
+    flex-direction: row;
+  }
+
+  .destination {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+
+  .interests {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+
+  .duration {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+
+  .preferences {
+    margin: 10px;
+  }
+
+  .button {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 60%;
+    max-height: 63px;
+    flex-direction: row;
+    border-radius: 100px;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  .firstLine {
+    margin-left: 20px;
+  }
 }

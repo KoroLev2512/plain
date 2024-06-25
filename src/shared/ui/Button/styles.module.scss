@@ -1,0 +1,51 @@
+@import "../../../styles/colors.scss";
+@import "../../../styles/mixins.scss";
+
+.button {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color: var(--white-color);
+  font-size: 30px;
+  font-weight: 300;
+
+  svg {
+    margin-right: 8px;
+  }
+}
+
+.blankButton {
+}
+
+.primaryButton {
+  font-family: Light, sans-serif;
+  padding: 9px 35px;
+  min-width: 170px;
+  min-height: 84px;
+  border-radius: 20px;
+  color: var(--white-color);
+  font-size: 30px;
+  font-weight: 300;
+  background: radial-gradient(478.67% 329.89% at 33.33% -64.29%, #00237D 11.95%, #4596C2 52.92%, rgba(202, 254, 254, 0.77) 79.59%, #F2C4E8 100%);
+}
+
+.secondaryButton {
+  margin:0 2px 0 2px;
+  padding: 8px 24px;
+  border-radius: 15px;
+  background-color: $primary-background-color;
+  @include paragraph-2;
+}
+
+.darklightButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
