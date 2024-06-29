@@ -2,9 +2,10 @@ import React from 'react';
 import {Text} from "@/shared/ui/Text";
 import {Filter} from "@/shared/ui/Filter";
 import {Input} from "@/shared/ui/Input";
+import {PrimaryButton} from "@/shared/ui/Button";
+import TooltipIcon from "@/../public/icons/tooltip.svg"
 
 import styles from "./styles.module.scss";
-import {PrimaryButton} from "@/shared/ui/Button";
 
 export const Options = ({ name }: { name: string }) => {
     return (
@@ -26,18 +27,37 @@ export const Options = ({ name }: { name: string }) => {
             />
             <Input
                 className={styles.duration}
-                placeholder="e.g 5"
+                placeholder="e.g. 5"
                 label="Trip duration"
                 children={name}
             />
-
+            {/*<div className={styles.inputWithTooltip}>*/}
+            {/*    <Input*/}
+            {/*        className={styles.duration}*/}
+            {/*        placeholder="e.g 5"*/}
+            {/*        label=""*/}
+            {/*        children={name}*/}
+            {/*    />*/}
+            {/*    <div className={styles.tooltipWithTitle}>*/}
+            {/*        Trip duration*/}
+            {/*        <TooltipIcon/>*/}
+            {/*    </div>*/}
+            {/*</div>*/}
             <div className={styles.preferences}>
-                <Text>Locations preferences</Text>
+                <div className={styles.preferencesTitle}>
+                    <Text>Locations preferences</Text>
+                    <div className={styles.tooltip}>
+                        {/*<TooltipIcon/>*/}
+                    </div>
+                </div>
                 <Filter/>
             </div>
             <div className={styles.checkbox}>
-                <div>
+                <div className={styles.nearbyLocations}>
                     Please show me nearby sights 150 km range
+                    <div>
+                        {/*<TooltipIcon/>*/}
+                    </div>
                 </div>
                 <div>
                     Add local cuisine tips

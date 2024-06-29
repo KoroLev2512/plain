@@ -1,0 +1,49 @@
+@import "../../../styles/colors.scss";
+@import "../../../styles/variables.scss";
+
+.outerWrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.centerWrapper {
+  padding: 32px 0 0 0;
+}
+
+.wrapper {
+  padding: 10px 20px;
+  box-sizing: border-box;
+  flex: 1;
+  height: 100%;
+  overflow: auto;
+  border-radius: 30px;
+}
+
+.wrapper::-webkit-scrollbar {
+  display: none; /* Скрываем скроллбар на устройствах с вебкит-движком (например, Safari и Chrome) */
+}
+
+@media (max-width: 1020px) {
+  .wrapper {
+    padding: 0;
+  }
+}
+
+@media (max-width: 720px) {
+  .outerWrapper {
+    padding: 0;
+  }
+  .wrapper {
+    border-radius: 0;
+    padding: 0;
+  }
+}
+
+@media (max-width: 720px) {
+  .outerWrapper {
+    padding: 0;
+  }
+  .wrapper {
+    border-radius: 0;
+  }
+}

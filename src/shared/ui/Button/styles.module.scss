@@ -23,8 +23,6 @@
 .primaryButton {
   font-family: Light, sans-serif;
   padding: 9px 35px;
-  min-width: 170px;
-  min-height: 84px;
   border-radius: 20px;
   color: var(--white-color);
   font-size: 30px;
@@ -50,8 +48,16 @@
   outline: none;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 1020px) {
   .primaryButton {
     border-radius: 100px;
+    margin: 0 0 20px 0;
+    padding: 0;
+    min-height: 60px;
+    width: 80%;
+  }
+
+  .button {
+    height: 20px;
   }
 }

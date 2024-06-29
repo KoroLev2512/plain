@@ -1,0 +1,15 @@
+@import "@/styles/colors.scss";
+
+.appWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 2000px;
+  margin: 0 auto;
+}
+
+.default {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

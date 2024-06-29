@@ -1,7 +1,12 @@
 import React from 'react';
 import Link from 'next/link';
+import LanguageFlag from "@/entities/LanguageFlag";
 
 import styles from "./styles.module.scss";
+
+interface IProps {
+    language: string;
+}
 
 export const Header = () => {
     return (
@@ -13,7 +18,9 @@ export const Header = () => {
                 />
             </Link>
             <div className={styles.buttons}>
-                <div className={styles.button_item}>language</div>
+                <div className={styles.button_language}>
+                    <LanguageFlag/>
+                </div>
                 <Link href={'/about'}>
                     <div className={styles.button_item}>about us</div>
                 </Link>

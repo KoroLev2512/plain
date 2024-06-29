@@ -1,7 +1,7 @@
 import React from 'react';
 import {Text} from "@/shared/ui/Text"
-import {Header} from "@/entities/Header";
 import Image from "next/image";
+import { useTranslation } from "react-i18next";
 
 import styles from "./styles.module.scss";
 
@@ -30,10 +30,13 @@ const about = [
     ],
 ]
 
+
+
 const About = () => {
+    const { t } = useTranslation();
+
     return (
         <>
-            <Header/>
             {about.map((item) => (
                 <div key={item[0].title} className={styles.wrapper}>
                     {item.map(about => (

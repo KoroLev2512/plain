@@ -4,7 +4,7 @@ import styles from "./styles.module.scss"
 
 export const Filter = () => {
     return (
-        <>
+        <div className={styles.wrapper}>
             <div className={styles.filter}>
                 mainstream
             </div>
@@ -14,6 +14,6 @@ export const Filter = () => {
             <div className={styles.filter}>
                 hidden gems
             </div>
-        </>
+        </div>
     );
 };

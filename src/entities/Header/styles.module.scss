@@ -5,6 +5,7 @@
   border-bottom: solid white 1px;
   margin: 20px;
   height: 85px;
+  user-select: none;
 }
 
 .logo {
@@ -23,12 +24,19 @@
   font-weight: 400;
   line-height: normal;
   text-transform: lowercase;
+  margin-bottom: 11px;
+  cursor: pointer;
 }
 
 .button_item {
-  padding-left: 110px;
-  padding-bottom: 11px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-left: 110px;
   color: white;
+}
+
+.button_language {
   cursor: pointer;
 }
 

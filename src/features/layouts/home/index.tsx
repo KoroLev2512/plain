@@ -1,18 +1,17 @@
 import React from 'react';
-import { Header } from "@/entities/Header";
 import { Options } from "@/entities/Options";
 import { Content } from "@/entities/Content";
-
-import styles from './styles.module.scss';
+import {TFunction} from "i18next";
 
 interface IProps {
     name: string;
+    t: TFunction;
+    language: string;
 }
 
-export const HomePage: React.FC = () => {
+export const HomePage: React.FC<IProps> = ({ t }) => {
     return (
-        <div className={styles.wrapper}>
-            <Header/>
+        <div>
             <Options name=""/>
             <Content/>
         </div>
