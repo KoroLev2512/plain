@@ -25,7 +25,6 @@
   line-height: normal;
   text-transform: lowercase;
   margin-bottom: 11px;
-  cursor: pointer;
 }
 
 .button_item {
@@ -51,23 +50,8 @@
   }
 
   .button_item {
-    padding-left: 73px;
+    margin-left: 73px;
   }
 }
 
-@media (max-width: 440px) {
-  .button_item {
-    padding-left: 40px;
-  }
-}
 
-@media (max-width: 370px) {
-  .buttons {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .logo {
-    margin-bottom: 10px;
-  }
-}

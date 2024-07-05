@@ -4,9 +4,9 @@ import LanguageFlag from "@/entities/LanguageFlag";
 
 import styles from "./styles.module.scss";
 
-interface IProps {
-    language: string;
-}
+// interface IProps {
+//     language: string;
+// }
 
 export const Header = () => {
     return (
@@ -21,8 +21,8 @@ export const Header = () => {
                 <div className={styles.button_language}>
                     <LanguageFlag/>
                 </div>
-                <Link href={'/about'}>
-                    <div className={styles.button_item}>about us</div>
+                <Link href={'/about'} className={styles.button_item}>
+                    <div>about us</div>
                 </Link>
             </div>
         </div>
