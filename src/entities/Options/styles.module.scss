@@ -1,5 +1,6 @@
 .wrapper {
   display: flex;
+  position: relative;
   flex-direction: row;
   justify-content: space-between;
   min-height: 104px;
@@ -69,13 +70,53 @@
 .preferencesTitle {
   display: flex;
   flex-direction: row;
+  position: relative;
 }
 
-.tooltip {
-  display: flex;
-  flex-direction: row;
-  margin: 15px 0 0 10px;
+.tooltipWrapper {
+  margin: 16px 0 0 10px;
+  position: relative;
 }
+
+.tooltip::after, .tooltip:before {
+  font-family: Light, sans-serif;
+  position:absolute;
+
+  transition: visibility 0s, opacity 0.3s; 
+  opacity: 0;
+  visibility: hidden;
+}
+
+.tooltip:before {
+  content: attr(data-text);
+  
+  bottom: calc(100% + 10px);
+  right: -750%;
+  width: 300px;
+  padding: 10px;
+  border-radius:10px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(8px);
+  color: black;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.tooltip:after {
+  content: "";
+  
+  left: 1px;
+  top: -11px;
+
+  border: 8px solid transparent;
+  border-color: rgba(255, 255, 255, 0.7) transparent transparent  transparent;
+}
+
+.tooltip:hover:before, .tooltip:hover:after {
+  opacity: 1;
+  visibility: visible;
+}
+
 
 .checkbox {
   display: flex;

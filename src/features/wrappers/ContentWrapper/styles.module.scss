@@ -2,7 +2,7 @@
 @import "../../../styles/variables.scss";
 
 .outerWrapper {
-  overflow: hidden;
+  overflow: visible;
   width: 100%;
 }
 
@@ -15,7 +15,7 @@
   box-sizing: border-box;
   flex: 1;
   height: 100%;
-  overflow: auto;
+  overflow: visible;
   border-radius: 30px;
 }
 
