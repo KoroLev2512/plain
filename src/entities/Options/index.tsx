@@ -7,7 +7,7 @@ import TooltipIcon from "@/../public/icons/tooltip.svg"
 
 import styles from "./styles.module.scss";
 
-export const Options = ({ name }: { name: string }) => {
+export const Options = ({ destination, interests, duration}: { destination: string, interests: string, duration: string}) => {
     return (
         <div className={styles.wrapper}>
             <Text className={styles.text}>
@@ -17,19 +17,19 @@ export const Options = ({ name }: { name: string }) => {
                 className={styles.destination}
                 placeholder="e.g. Rome or Florida"
                 label="Enter destination"
-                children={name}
+                children={destination}
             />
             <Input
                 className={styles.interests}
                 placeholder="e.g. Photoblogging, Art, Museums"
                 label="Enter your interests"
-                children={name}
+                children={interests}
             />
             <Input
                 className={styles.duration}
                 placeholder="e.g. 5"
                 label="Trip duration"
-                children={name}
+                children={duration}
             />
             {/*<div className={styles.inputWithTooltip}>*/}
             {/*    <Input*/}

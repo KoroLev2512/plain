@@ -4,7 +4,9 @@ import { Content } from "@/entities/Content";
 import {TFunction} from "i18next";
 
 interface IProps {
-    name: string;
+    destination: string;
+    interests: string;
+    duration: string;
     t: TFunction;
     language: string;
 }
@@ -12,7 +14,7 @@ interface IProps {
 export const HomePage: React.FC<IProps> = ({ t }) => {
     return (
         <div>
-            <Options name=""/>
+            <Options destination='' interests='' duration='1'/>
             <Content/>
         </div>
     );
