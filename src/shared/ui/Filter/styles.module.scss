@@ -1,12 +1,22 @@
-
+.wrapper {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding-bottom: 5px;
+}
 
 .filter {
-  display: inline-flex;
   padding: 4px 16px;
   justify-content: center;
   align-items: center;
-  border-radius: 30px;
+  text-align: center;
+  border-radius: 14px;
   border: 1px solid rgba(0, 0, 0, 0.80);
-  margin-right: 5px;
+
+  // flex-grow: 1; // maybe can use this to make elements grow to fill the space
 }
 
+.selected {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
