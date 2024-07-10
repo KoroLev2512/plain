@@ -20,7 +20,7 @@ export const Input: FC<Props> = ({
 			<Text as={"p"}>{label}</Text>
 			<input
 				className={classNames(styles.input)}
-				value={children}
+				defaultValue={children}
 				{...restProps}
 			/>
 		</div>
