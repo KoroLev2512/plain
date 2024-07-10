@@ -99,10 +99,34 @@
   margin: 0 10px;
 }
 
-.nearbyLocations {
+.nearbyLocations, .localCuisine {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+
+
+  label:before {
+    content: "\2713";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    border: 1px black solid;
+    border-radius: 5px;
+
+    text-align: center;
+    line-height: 17px;
+    color: transparent;
+  }
+  
+
+  input[type=checkbox] {
+    appearance: none;
+  }
+  
+  input[type=checkbox]:checked ~ label:before {
+    color: black;
+  }
 }
 
 //@media (max-width: 1440px) {

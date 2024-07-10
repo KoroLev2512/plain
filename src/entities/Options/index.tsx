@@ -54,13 +54,15 @@ export const Options = ({ name }: { name: string }) => {
             </div>
             <div className={styles.checkbox}>
                 <div className={styles.nearbyLocations}>
-                    Please show me nearby sights 150 km range
+                    <input id="nearbyLocations" type="checkbox"/>
+                    <label htmlFor="nearbyLocations">Please show me nearby sights 150 km range</label>
                     <div>
                         {/*<TooltipIcon/>*/}
                     </div>
                 </div>
-                <div>
-                    Add local cuisine tips
+                <div className={styles.localCuisine}>
+                    <input id="localCuisine" type="checkbox"/>
+                    <label htmlFor="localCuisine">Add local cuisine tips</label>
                 </div>
             </div>
             <PrimaryButton className={styles.button}>
