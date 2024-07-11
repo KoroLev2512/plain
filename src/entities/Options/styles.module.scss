@@ -141,6 +141,25 @@
   }
 }
 
+@media (max-width: 1240px) {
+  .destination {
+    margin-top: 20px;
+  }
+
+  .interests {
+    margin-top: 20px;
+  }
+
+  .duration {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 1118px) {
+  .duration {
+    margin-top: 0;
+  }
+}
 
 @media (max-width: 1020px) {
   .wrapper {
