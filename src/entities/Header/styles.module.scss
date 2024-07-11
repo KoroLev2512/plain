@@ -54,4 +54,15 @@
   }
 }
 
+@media (max-width: 380px) {
+  .buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .button_item {
+    margin: 5px 0 -8px 0;
+  }
+}
+
 
