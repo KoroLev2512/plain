@@ -111,6 +111,12 @@
 //  }
 //}
 
+@media (max-width: 1730px) {
+  .text {
+    display: none;
+  }
+}
+
 
 @media (max-width: 1020px) {
   .wrapper {
@@ -124,6 +130,7 @@
   }
 
   .text {
+    display: flex;
     flex-direction: row;
     margin: 20px 24px 0 24px;
     font-size: 40px;
