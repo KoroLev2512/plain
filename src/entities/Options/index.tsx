@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import {Text} from "@/shared/ui/Text";
 import {Filter} from "@/shared/ui/Filter";
 import {Input} from "@/shared/ui/Input";
@@ -28,43 +29,51 @@ export const Options = ({ name }: { name: string }) => {
                     children={name}
                 />
 
-                <Text>Trip duration</Text>
+                <div className={styles.tripDurationWrapper}>
+                    <Text>
+                        Trip duration
+                    </Text>
+                    <div className={styles.tooltipWrapper}>
+                        <span className={styles.tooltip} data-text="Please choose the number of days you will spend traveling">
+                            <Image
+                                src={TooltipIcon}
+                                alt=" ? "
+                            />
+                        </span>
+                    </div>
+                </div>
                 <Input
                     className={styles.duration}
                     placeholder="e.g. 5"
                     children={name}
                 />
-
                 <div className={styles.preferencesTitle}>
                     <Text>Locations preferences</Text>
-                    <div className={styles.tooltip}>
-                        {/*<TooltipIcon/>*/}
+                    <div className={styles.tooltipWrapper}>
+                        <span className={styles.tooltip} data-text="If you’re visiting the destination for the first time, you might be interested in popular locations. Experienced traveller might go for hidden gems or a mix of both.">
+                            <Image
+                                src={TooltipIcon}
+                                alt=" ? "
+                            />
+                        </span>
                     </div>
                 </div>
                 <Filter/>
             </div>
-            
-            {/*<div className={styles.inputWithTooltip}>*/}
-            {/*    <Input*/}
-            {/*        className={styles.duration}*/}
-            {/*        placeholder="e.g 5"*/}
-            {/*        label=""*/}
-            {/*        children={name}*/}
-            {/*    />*/}
-            {/*    <div className={styles.tooltipWithTitle}>*/}
-            {/*        Trip duration*/}
-            {/*        <TooltipIcon/>*/}
-            {/*    </div>*/}
-            {/*</div>*/}
-            {/* <div className={styles.preferences}>
-                
-            </div> */}
+
             <div className={styles.checkbox}>
                 <div className={styles.nearbyLocations}>
                     <input id="nearbyLocations" type="checkbox"/>
-                    <label htmlFor="nearbyLocations">Please show me nearby sights 150 km range</label>
-                    <div>
-                        {/*<TooltipIcon/>*/}
+                    <label htmlFor="nearbyLocations">
+                        Please show me nearby sights 150 km range
+                    </label>
+                    <div className={styles.tooltipWrapper}>
+                        <span className={styles.tooltip} data-text="Helps you to explore the area around a small town">
+                            <Image
+                                src={TooltipIcon}
+                                alt=" ? "
+                            />
+                        </span>
                     </div>
                 </div>
                 <div className={styles.localCuisine}>

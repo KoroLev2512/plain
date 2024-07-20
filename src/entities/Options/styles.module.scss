@@ -2,6 +2,7 @@
   position: relative;
   font-family: Light, sans-serif;
   display: flex;
+  position: relative;
   flex-direction: row;
   justify-content: space-between;
   min-height: 104px;
@@ -23,6 +24,13 @@
   grid-auto-flow: column;
   row-gap: 10px;
   column-gap: 30px;
+}
+
+.tripDurationWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .text {
@@ -82,12 +90,53 @@
 .preferencesTitle {
   display: flex;
   flex-direction: row;
+  position: relative;
 }
 
-.tooltip {
-  display: flex;
-  flex-direction: row;
-  margin: 15px 0 0 10px;
+.tooltipWrapper {
+  margin-left: 6px;
+  margin-top: 6px;
+  position: relative;
+}
+
+.tooltip::after, .tooltip:before {
+  z-index: 1000;
+  font-family: Light, sans-serif;
+  position:absolute;
+
+  transition: visibility 0s, opacity 0.3s; 
+  opacity: 0;
+  visibility: hidden;
+}
+
+.tooltip:before {
+  content: attr(data-text);
+  
+  bottom: calc(100% + 10px);
+  right: -750%;
+  width: 300px;
+  padding: 10px;
+  border-radius:10px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(8px);
+  color: black;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.tooltip:after {
+  content: "";
+  
+  left: 1px;
+  top: -11px;
+
+  border: 8px solid transparent;
+  border-color: rgba(255, 255, 255, 0.7) transparent transparent  transparent;
+}
+
+.tooltip:hover:before, .tooltip:hover:after {
+  opacity: 1;
+  visibility: visible;
 }
 
 .checkbox {
@@ -116,8 +165,16 @@
 .nearbyLocations, .localCuisine {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
 
+  label {
+    display: flex;
+    flex-direction: row;
+  }
+
+  div:last-child {
+    margin-top: 5px;
+  }
 
   label:before {
     content: "\2713";
@@ -207,9 +264,13 @@
     padding: 20px;
   }
 
-  .inputGrid > p, .preferencesTitle {
-    margin-top: 30px;
+  .inputGrid > p {
+    margin-top: 25px;
     margin-bottom: 5px;
+  }
+
+  .preferencesTitle {
+    margin-top: 20px;
   }
 
   .inputGrid > p:first-child {
@@ -258,6 +319,32 @@
     padding: 0;
     padding-inline: 40px;
     margin: 20px;
+  }
+
+  .tooltip:before {
+    padding: 10px;
+    position: fixed;
+    width: 80vw;
+    height: min-content;
+    top: 50%;
+    left: 50%;
+    // margin-top: 40vh; /* Negative half of height. */
+    margin-left: calc(-40vw - 10px); /* Negative half of width. */
+  }
+
+  .tooltip:after {
+    position: fixed;
+    pointer-events: none;
+    z-index: 999;
+    left: -1vw;
+    top: -1vh;
+    width: 110vw;
+    height: 110vh;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .tripDurationWrapper {
+    margin-top: 25px;
   }
 
 }
