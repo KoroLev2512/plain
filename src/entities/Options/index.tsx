@@ -13,24 +13,37 @@ export const Options = ({ name }: { name: string }) => {
             <Text className={styles.text}>
                 Options
             </Text>
-            <Input
-                className={styles.destination}
-                placeholder="e.g. Rome or Florida"
-                label="Enter destination"
-                children={name}
-            />
-            <Input
-                className={styles.interests}
-                placeholder="e.g. Photoblogging, Art, Museums"
-                label="Enter your interests"
-                children={name}
-            />
-            <Input
-                className={styles.duration}
-                placeholder="e.g. 5"
-                label="Trip duration"
-                children={name}
-            />
+            <div className={styles.inputGrid}>
+                <Text>Enter destination</Text>
+                <Input
+                    className={styles.destination}
+                    placeholder="e.g. Rome or Florida"
+                    children={name}
+                />
+
+                <Text>Enter your interests</Text>
+                <Input
+                    className={styles.interests}
+                    placeholder="e.g. Photoblogging, Art, Museums"
+                    children={name}
+                />
+
+                <Text>Trip duration</Text>
+                <Input
+                    className={styles.duration}
+                    placeholder="e.g. 5"
+                    children={name}
+                />
+
+                <div className={styles.preferencesTitle}>
+                    <Text>Locations preferences</Text>
+                    <div className={styles.tooltip}>
+                        {/*<TooltipIcon/>*/}
+                    </div>
+                </div>
+                <Filter/>
+            </div>
+            
             {/*<div className={styles.inputWithTooltip}>*/}
             {/*    <Input*/}
             {/*        className={styles.duration}*/}
@@ -43,15 +56,9 @@ export const Options = ({ name }: { name: string }) => {
             {/*        <TooltipIcon/>*/}
             {/*    </div>*/}
             {/*</div>*/}
-            <div className={styles.preferences}>
-                <div className={styles.preferencesTitle}>
-                    <Text>Locations preferences</Text>
-                    <div className={styles.tooltip}>
-                        {/*<TooltipIcon/>*/}
-                    </div>
-                </div>
-                <Filter/>
-            </div>
+            {/* <div className={styles.preferences}>
+                
+            </div> */}
             <div className={styles.checkbox}>
                 <div className={styles.nearbyLocations}>
                     <input id="nearbyLocations" type="checkbox"/>
