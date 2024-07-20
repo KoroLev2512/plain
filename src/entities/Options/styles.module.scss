@@ -111,7 +111,7 @@
     width: 16px;
     height: 16px;
     margin-right: 8px;
-    border: 1px black solid;
+    border: 1px #4190be solid;
     border-radius: 5px;
 
     text-align: center;
@@ -125,7 +125,8 @@
   }
   
   input[type=checkbox]:checked ~ label:before {
-    color: black;
+    color: white;
+    background: #4190be;
   }
 }
 
