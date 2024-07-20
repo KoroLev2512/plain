@@ -196,7 +196,8 @@
   }
   
   input[type=checkbox]:checked ~ label:before {
-    color: black;
+    color: white;
+    background: black;
   }
 }
 
