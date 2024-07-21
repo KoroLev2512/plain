@@ -9,7 +9,6 @@ export const Filter = () => {
 
     const handleFilterClick = (filter: string) => {
         if (selectedFilter === filter) {
-            setSelectedFilter("");
             return;
         }
         setSelectedFilter(filter);
@@ -17,8 +16,6 @@ export const Filter = () => {
 
     return (
         <div className={styles.wrapper}>
-            {/* uncomment line below to check for selected style */}
-            {/* <div className={styles.filter + " " + styles.selected}> */}
             {filters.map((filter, index) => (
                 <div key={index}
                      className={`${styles.filter} ${selectedFilter === filter ? styles.selected : ""}`}
