@@ -4,6 +4,7 @@ import {Text} from "@/shared/ui/Text";
 import {Filter} from "@/shared/ui/Filter";
 import {Input} from "@/shared/ui/Input";
 import {PrimaryButton} from "@/shared/ui/Button";
+import {TripDuration} from '../TripDuration';
 import TooltipIcon from "@/../public/icons/tooltip.svg"
 
 import styles from "./styles.module.scss";
@@ -42,11 +43,7 @@ export const Options = ({ name }: { name: string }) => {
                         </span>
                     </div>
                 </div>
-                <Input
-                    className={styles.duration}
-                    placeholder="e.g. 5"
-                    children={name}
-                />
+                <TripDuration/>
                 <div className={styles.preferencesTitle}>
                     <Text>Locations preferences</Text>
                     <div className={styles.tooltipWrapper}>
