@@ -57,43 +57,44 @@ const About = () => {
                             <Text className={styles.requestsList}>
                                 We're a bunch of travel enthusiasts! Meet our team: Michael, our globetrotting CEO, who's been to over 30 countries and helped tons of travelers plan their dream trips. Eugene, our tech genius CTO, is all about AI and machine learning. And Julia, our vibrant CMO, spreads the word about our product to as many folks as possible. We're all in this together to make your travels amazing!
                             </Text>
-                            <div className={styles.cardList}>
-                                <div className={styles.card}>
-                                    <Image
-                                        src={"/images/image_1.png"}
-                                        width={152}
-                                        height={204}
-                                        alt=""
-                                        className={styles.cardImage}
-                                    />
-                                    <Text className={styles.cardLabel}>
-                                        Eugene Balkind
-                                    </Text>
-                                </div>
-                                <div className={styles.card}>
-                                    <Image
-                                        src={"/images/image_2.png"}
-                                        width={152}
-                                        height={204}
-                                        alt=""
-                                        className={styles.cardImage}
-                                    />
-                                    <Text className={styles.cardLabel}>
-                                        Julia Irtyuga
-                                    </Text>
-                                </div>
-                                <div className={styles.card}>
-                                    <Image
-                                        src={"/images/image_3.png"}
-                                        width={152}
-                                        height={204}
-                                        alt=""
-                                        className={styles.cardImage}
-                                    />
-                                    <Text className={styles.cardLabel}>
-                                        Michael Nikolaev
-                                    </Text>
-                                </div>
+                            
+                        </div>
+                        <div className={styles.cardList}>
+                            <div className={styles.card}>
+                                <Image
+                                    src={"/images/image_1.png"}
+                                    width={152}
+                                    height={204}
+                                    alt=""
+                                    className={styles.cardImage}
+                                />
+                                <Text className={styles.cardLabel}>
+                                    Eugene Balkind
+                                </Text>
+                            </div>
+                            <div className={styles.card}>
+                                <Image
+                                    src={"/images/image_2.png"}
+                                    width={152}
+                                    height={204}
+                                    alt=""
+                                    className={styles.cardImage}
+                                />
+                                <Text className={styles.cardLabel}>
+                                    Julia Irtyuga
+                                </Text>
+                            </div>
+                            <div className={styles.card}>
+                                <Image
+                                    src={"/images/image_3.png"}
+                                    width={152}
+                                    height={204}
+                                    alt=""
+                                    className={styles.cardImage}
+                                />
+                                <Text className={styles.cardLabel}>
+                                    Michael Nikolaev
+                                </Text>
                             </div>
                         </div>
                     </div>
