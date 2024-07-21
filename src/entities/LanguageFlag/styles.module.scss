@@ -20,12 +20,12 @@
   font-weight: 400;
   line-height: normal;
   text-transform: lowercase;
+  visibility: visible;
   transition: visibility 0s, opacity 0.3s; 
 }
 
 .languages {
   display: flex;
-  opacity: 0;
   cursor: pointer;
   position: absolute;
   left: -8px;
@@ -35,6 +35,7 @@
   justify-content: center;
   gap: 10px;
   color: white;
+  visibility: visible;
   transition: visibility 0s, opacity 0.3s; 
 }
 
@@ -59,14 +60,10 @@
 //   margin-right: 0;
 // }
 
-.flags:hover {
-  .languages {
-    opacity: 1;
-    visibility: visible;
-  }
-  .text {
-    opacity: 0; 
-    transition: opacity 0.2s;
-  }
+.disabled {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  cursor: none;
+  // display: none;
 }
-

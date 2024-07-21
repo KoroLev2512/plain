@@ -1,8 +1,4 @@
 import React from 'react';
-import Tooltip from '@mui/material/Tooltip';
-import IconButton from '@mui/material/IconButton';
-import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
 import cookies from 'js-cookie'
 import { useTranslation } from "react-i18next";
 import i18next from 'i18next'
@@ -27,26 +23,39 @@ export default function LanguageFlag() {
         },
     ]
 
-    const { t } = useTranslation();
+    const { i18n } = useTranslation();
 
-    const currentLanguageCode = cookies.get('i18next') || 'en'
+    const [isOpen, setIsOpen] = React.useState(false);
+    const languageDiv = React.useRef(null);
+    
+    const [currLanguage, setCurrLanguage] = React.useState("");
 
-    const [anchorEl, setAnchorEl] = React.useState<null | Element>(null);    const open = Boolean(anchorEl);
-    const handleClick = (event: React.MouseEvent) => {
-        setAnchorEl(event.currentTarget);
-    };
-    const handleClose = () => {
-        setAnchorEl(null);
+    React.useEffect(() => {
+        setCurrLanguage(i18n.language)
+
+        document.addEventListener("click", handleClickOutside);
+
+        return () => {
+            document.removeEventListener("click", handleClickOutside);
+        };
+    }, []);
+
+    const handleClickOutside = (event: any) => {
+        const path = event.path || (event.composedPath && event.composedPath());
+    
+        if (!path.includes(languageDiv.current)) {
+            setIsOpen(false);
+        }
     };
 
     return (
-        <div className={styles.flags}>
-            <div className={styles.text} onClick={handleClick}>
+        <div className={styles.flags} ref={languageDiv}>
+            <div className={styles.text + (isOpen ? ` ${styles.disabled}` : "")} onClick={(e) => {e.stopPropagation; setIsOpen(true)}}>
                 <p>language</p>
             </div>
-            <div className={styles.languages}>
+            <div className={styles.languages + (isOpen ? "" : ` ${styles.disabled}`)}>
                 {languages.map(({ code, name, country_code, icon }) => (
-                    <p key={code} onClick={() => i18next.changeLanguage(code)} className={currentLanguageCode == code ? styles.active : ""}>{country_code}</p>
+                    <p key={code} onClick={(e) => {e.stopPropagation; i18next.changeLanguage(code); setCurrLanguage(code)}} className={currLanguage == code ? `${styles.active}` : ""}>{code}</p>
                 ))}
             </div>
         </div>
