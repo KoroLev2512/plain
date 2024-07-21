@@ -213,7 +213,7 @@
   }
 }
 
-@media (min-width: 1030px) and (max-width: 1500px) {
+@media (min-width: 1031px) and (max-width: 1500px) {
   .inputGrid {
     grid-template-columns: auto auto auto min-content;
   }
@@ -246,11 +246,6 @@
   }
 }
 
-@media (max-width: 1118px) {
-  .duration {
-    margin-top: 0;
-  }
-}
 
 @media (max-width: 1030px) {
   .firstLine {
