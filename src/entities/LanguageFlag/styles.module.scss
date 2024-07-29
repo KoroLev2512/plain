@@ -1,11 +1,16 @@
 .flags {
+  position: relative;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  cursor: pointer;
+  justify-content: space-between;
+}
+
+.active {
+  border-color: rgba(255, 255, 255, 1) !important;
 }
 
 .text {
+  display: none;
   display: flex;
   flex-direction: column;
   font-family: Light, sans-serif;
@@ -15,4 +20,50 @@
   font-weight: 400;
   line-height: normal;
   text-transform: lowercase;
+  visibility: visible;
+  transition: visibility 0s, opacity 0.3s; 
+}
+
+.languages {
+  display: flex;
+  cursor: pointer;
+  position: absolute;
+  left: -8px;
+  right: -8px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: white;
+  visibility: visible;
+  transition: visibility 0s, opacity 0.3s; 
+}
+
+.text > p {
+  margin: 0;
+}
+
+.languages > p {
+  margin: 0;
+  padding-inline: 8px;
+  transition: 0.5s;
+  padding-bottom: 2px;
+  border: 2px solid rgba(255, 255, 255, 0);
+  border-radius: 50%;
+}
+
+// .text > p:first-child {
+//   margin-left: 0;
+// }
+
+// .text > p:last-child {
+//   margin-right: 0;
+// }
+
+.disabled {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  cursor: none;
+  // display: none;
 }
