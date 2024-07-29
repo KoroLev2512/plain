@@ -1,5 +1,4 @@
 import React from 'react';
-import cookies from 'js-cookie'
 import { useTranslation } from "react-i18next";
 import i18next from 'i18next'
 
