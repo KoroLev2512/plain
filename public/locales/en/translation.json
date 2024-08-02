@@ -1,4 +1,47 @@
 {
-  "What is Plain?": "What is Plain?",
-  "Is Plain Free?": "Is Plain Free?"
+  "Title: What is Plain?": "What is Plain?",
+  "Description: What is Plain?": "Plain is your friendly artificial intelligence-based travel assistant. We've trained it to whip up awesome travel plans based on your interests. Think of it as having your own personal travel guru who can create a tailored itinerary for you in just a few minutes!",
+
+  "Title: What Can Plain Do?": "What Can Plain Do?",
+  "Description: What Can Plain Do?": "Plain is pretty nifty! Right now, it can find cool attractions and suggest places and activities that match your interests. In the future, we're planning to teach it to recommend top-notch hotels and restaurants nearby. Heck, we might even get it booking hotels and inns, so you won't have to stress about your vacation plans for even a second!",
+
+  "Title: When Can I Use Plain?": "When Can I Use Plain?",
+  "Description: When Can I Use Plain?": "You can use Plain for adventures in other cities and countries, or even for exploring your own hometown! It's perfect whether you're planning a big, elaborate trip or just a quick getaway to a nearby city for a couple of days. Plus, it's lightning-fast, so it's great for spontaneous trips too!",
+
+  "Title: How Good Are Plain's Recommendations?": "How Good Are Plain's Recommendations?",
+  "Description: How Good Are Plain's Recommendations?": "Our recommendations are pretty spot-on, but we're always working to make them even better. While we're not quite at 100% accuracy, if you're heading to a popular tourist destination, you can trust us. For lesser-known spots, it's a good idea to double-check our recommendations online. Over time, we'll get even better, and our suggestions will be totally on point!",
+
+  "Title: How Do I Use Plain?": "How Do I Use Plain?",
+  "Description: How Do I Use Plain?": "Using Plain is a breeze! Just start on the main screen, type in your destination city or region, tell us what you're into, how long your trip will be, and your preferences. Once you do that, our service will serve up a list of fantastic recommendations just for you!",
+
+  "Title: Who's Behind Plain?": "Who's Behind Plain?",
+  "Description: Who's Behind Plain?": "We're a bunch of travel enthusiasts! Meet our team: Michael, our globetrotting CEO, who's been to over 30 countries and helped tons of travelers plan their dream trips. Eugene, our tech genius CTO, is all about AI and machine learning. And Julia, our vibrant CMO, spreads the word about our product to as many folks as possible. We're all in this together to make your travels amazing!",
+
+  "Title: Is Plain Free?": "Is Plain Free?",
+  "Description: Is Plain Free?": "Yup, it won't cost you a dime to use our service. It's on the house!",
+
+  "Got any questions?": "Got any questions?\nMail us!\nMichael@plaintrips.com",
+
+  "About": "about",
+  "Language": "language",
+
+  "Enter destination": "Enter destination",
+  "Destination example": "e.g. Rome or Florida",
+
+  "Enter your interests": "Enter your interests",
+  "Interest example": "e.g. Photoblogging, Art, Museums",
+
+  "Trip duration": "Trip duration",
+
+  "Locations preferences": "Locations preferences",
+  "mainstream": "mainstream",
+  "balanced": "balanced",
+  "hidden gems": "hidden gems",
+
+  "Checkbox 1": "Please, ",
+  "Checkbox 2": "",
+
+  "Tooltip 1": "",
+  "Tooltip 2": "",
+  "Tooltip 3": ""
 }
