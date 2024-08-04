@@ -1,5 +1,5 @@
 import React from 'react';
-import { useTranslation } from "react-i18next";
+import {useTranslation} from "react-i18next";
 import i18next from 'i18next'
 
 import styles from '@/entities/LanguageFlag/styles.module.scss';
@@ -22,11 +22,11 @@ export default function LanguageFlag() {
         },
     ]
 
-    const { i18n } = useTranslation();
+    const {i18n} = useTranslation();
 
     const [isOpen, setIsOpen] = React.useState(false);
     const languageDiv = React.useRef(null);
-    
+
     const [currLanguage, setCurrLanguage] = React.useState("");
 
     React.useEffect(() => {
@@ -41,7 +41,7 @@ export default function LanguageFlag() {
 
     const handleClickOutside = (event: any) => {
         const path = event.path || (event.composedPath && event.composedPath());
-    
+
         if (!path.includes(languageDiv.current)) {
             setIsOpen(false);
         }
@@ -49,12 +49,19 @@ export default function LanguageFlag() {
 
     return (
         <div className={styles.flags} ref={languageDiv}>
-            <div className={styles.text + (isOpen ? ` ${styles.disabled}` : "")} onClick={(e) => {e.stopPropagation; setIsOpen(true)}}>
+            <div className={styles.text + (isOpen ? ` ${styles.disabled}` : "")} onClick={(e) => {
+                e.stopPropagation;
+                setIsOpen(true)
+            }}>
                 <p>language</p>
             </div>
             <div className={styles.languages + (isOpen ? "" : ` ${styles.disabled}`)}>
-                {languages.map(({ code, name, country_code, icon }) => (
-                    <p key={code} onClick={(e) => {e.stopPropagation; i18next.changeLanguage(code); setCurrLanguage(code)}} className={currLanguage == code ? `${styles.active}` : ""}>{code}</p>
+                {languages.map(({code, name, country_code, icon}) => (
+                    <p key={code} onClick={(e) => {
+                        e.stopPropagation;
+                        i18next.changeLanguage(code);
+                        setCurrLanguage(code)
+                    }} className={currLanguage == code ? `${styles.active}` : ""}>{code}</p>
                 ))}
             </div>
         </div>

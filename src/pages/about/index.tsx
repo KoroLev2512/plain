@@ -1,40 +1,37 @@
 import React from 'react';
 import {Text} from "@/shared/ui/Text"
 import Image from "next/image";
-import { useTranslation } from "react-i18next";
+import {useTranslation} from "react-i18next";
 
 import styles from "./styles.module.scss";
-
-const about = [
-    [
-        {
-            title: "What is Plain?",
-            text: "Plain is your friendly artificial intelligence-based travel assistant. We've trained it to whip up awesome travel plans based on your interests. Think of it as having your own personal travel guru who can create a tailored itinerary for you in just a few minutes!"
-        },
-        {
-            title: "What Can Plain Do?",
-            text: "Plain is pretty nifty! Right now, it can find cool attractions and suggest places and activities that match your interests. In the future, we're planning to teach it to recommend top-notch hotels and restaurants nearby. Heck, we might even get it booking hotels and inns, so you won't have to stress about your vacation plans for even a second!"
-        },
-        {
-            title: "When Can I Use Plain?",
-            text: "You can use Plain for adventures in other cities and countries, or even for exploring your own hometown! It's perfect whether you're planning a big, elaborate trip or just a quick getaway to a nearby city for a couple of days. Plus, it's lightning-fast, so it's great for spontaneous trips too!"
-        },
-        {
-            title: "What Can Plain Do?",
-            text: "Plain is pretty nifty! Right now, it can find cool attractions and suggest places and activities that match your interests. In the future, we're planning to teach it to recommend top-notch hotels and restaurants nearby. Heck, we might even get it booking hotels and inns, so you won't have to stress about your vacation plans for even a second!"
-        },
-        {
-            title: "When Can I Use Plain?",
-            text: "You can use Plain for adventures in other cities and countries, or even for exploring your own hometown! It's perfect whether you're planning a big, elaborate trip or just a quick getaway to a nearby city for a couple of days. Plus, it's lightning-fast, so it's great for spontaneous trips too!"
-        },
-    ],
-]
-
-
 
 const About = () => {
     const { t } = useTranslation();
 
+    const about = [
+        [
+            {
+                title: "What is Plain?",
+                text: "Plain is your friendly artificial intelligence-based travel assistant. We've trained it to whip up awesome travel plans based on your interests. Think of it as having your own personal travel guru who can create a tailored itinerary for you in just a few minutes!"
+            },
+            {
+                title: "What Can Plain Do?",
+                text: "Plain is pretty nifty! Right now, it can find cool attractions and suggest places and activities that match your interests. In the future, we're planning to teach it to recommend top-notch hotels and restaurants nearby. Heck, we might even get it booking hotels and inns, so you won't have to stress about your vacation plans for even a second!"
+            },
+            {
+                title: "When Can I Use Plain?",
+                text: "You can use Plain for adventures in other cities and countries, or even for exploring your own hometown! It's perfect whether you're planning a big, elaborate trip or just a quick getaway to a nearby city for a couple of days. Plus, it's lightning-fast, so it's great for spontaneous trips too!"
+            },
+            {
+                title: "What Can Plain Do?",
+                text: "Plain is pretty nifty! Right now, it can find cool attractions and suggest places and activities that match your interests. In the future, we're planning to teach it to recommend top-notch hotels and restaurants nearby. Heck, we might even get it booking hotels and inns, so you won't have to stress about your vacation plans for even a second!"
+            },
+            {
+                title: "When Can I Use Plain?",
+                text: "You can use Plain for adventures in other cities and countries, or even for exploring your own hometown! It's perfect whether you're planning a big, elaborate trip or just a quick getaway to a nearby city for a couple of days. Plus, it's lightning-fast, so it's great for spontaneous trips too!"
+            },
+        ],
+    ]
     return (
         <>
             {about.map((item) => (
@@ -42,7 +39,7 @@ const About = () => {
                     {item.map(about => (
                         <div key={about.title} className={styles.list}>
                             <Text as="h2" className={styles.item}>
-                                {about.title}
+                                {t("What is Plain?")}
                             </Text>
                             <Text className={styles.requestsList}>
                                 {about.text}
@@ -57,7 +54,7 @@ const About = () => {
                             <Text className={styles.requestsList}>
                                 We're a bunch of travel enthusiasts! Meet our team: Michael, our globetrotting CEO, who's been to over 30 countries and helped tons of travelers plan their dream trips. Eugene, our tech genius CTO, is all about AI and machine learning. And Julia, our vibrant CMO, spreads the word about our product to as many folks as possible. We're all in this together to make your travels amazing!
                             </Text>
-                            
+
                         </div>
                         <div className={styles.cardList}>
                             <div className={styles.card}>
