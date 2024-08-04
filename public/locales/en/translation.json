@@ -38,10 +38,10 @@
   "balanced": "balanced",
   "hidden gems": "hidden gems",
 
-  "Checkbox 1": "Please, ",
-  "Checkbox 2": "",
+  "Checkbox 1": "Please show me nearby sights 150km range",
+  "Checkbox 2": "Add local cuisine tips",
 
-  "Tooltip 1": "",
-  "Tooltip 2": "",
-  "Tooltip 3": ""
+  "Tooltip 1": "Please choose the number of days you will spend travelling",
+  "Tooltip 2": "If you’re visiting the destination for the first time, you might be interested in popular locations. Experienced traveller might go for hidden gems or a mix of both",
+  "Tooltip 3": "Helps you to explore the area around a small town"
 }
