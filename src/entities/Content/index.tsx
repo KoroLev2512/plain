@@ -5,7 +5,7 @@ import styles from "./styles.module.scss";
 export const Content = () => {
     return (
         <div className={styles.wrapper}>
-            Я почти придумал
+            Это демо-версия
         </div>
     );
 };

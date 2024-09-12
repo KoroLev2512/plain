@@ -1,12 +1,12 @@
 import React from 'react';
 import {Text} from "@/shared/ui/Text"
 import Image from "next/image";
-import {useTranslation} from "react-i18next";
+//import {useTranslation} from "react-i18next";
 
 import styles from "./styles.module.scss";
 
 const About = () => {
-    const { t } = useTranslation();
+    //const {t} = useTranslation();
 
     const about = [
         [
@@ -39,7 +39,7 @@ const About = () => {
                     {item.map(about => (
                         <div key={about.title} className={styles.list}>
                             <Text as="h2" className={styles.item}>
-                                {t("What is Plain?")}
+                                {about.title}
                             </Text>
                             <Text className={styles.requestsList}>
                                 {about.text}
