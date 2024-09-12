@@ -1,4 +1,7 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Plain: your unforgettable journey
+
+##### This project was created for Plain app, which, with the help of artificial intelligence, is able to build travel routes based on the user's preferences
+
 
 ## Getting Started
 
@@ -8,10 +11,6 @@ First, run the development server:
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
