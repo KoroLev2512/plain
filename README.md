@@ -42,11 +42,11 @@ You can start editing the page by modifying `src/pages/index.tsx`. The page auto
 
 ## Interface Components
 
-– Navbar
-– Checkboxes
-– Filter buttons    
-– Tooltips
-– Language flag
+- Navbar    
+- Checkboxes    
+- Filter buttons         
+- Tooltips  
+- Language flag 
 
 ## Status
 
