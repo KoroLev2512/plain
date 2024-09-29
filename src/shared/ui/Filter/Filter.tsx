@@ -1,8 +1,10 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 import styles from "./styles.module.scss"
 
 export const Filter = () => {
+    const { t } = useTranslation();
 
     const filters = ["mainstream", "balanced", "hidden gems"]
     const [selectedFilter, setSelectedFilter] = React.useState<string>("");
@@ -20,7 +22,7 @@ export const Filter = () => {
                 <div key={index}
                      className={`${styles.filter} ${selectedFilter === filter ? styles.selected : ""}`}
                      onClick={(e) => {handleFilterClick(filter)}}>
-                    {filter}
+                    {t(filter)}
                 </div>
             ))}
         </div>

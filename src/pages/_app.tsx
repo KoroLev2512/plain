@@ -1,21 +1,19 @@
 import type {AppProps} from 'next/app'
-import {IntlProvider} from 'next-intl'
 import AppWrapper from "@/features/wrappers/AppWrapper"
+import {appWithI18Next} from "ni18n";
+import {ni18nConfig} from "@/../ni18n.config";
 import {useRouter} from "next/router";
 
 import '../styles/globals.scss'
 
 function App({Component, pageProps}: AppProps) {
     const router = useRouter();
-    const locale = router.locale || 'en';
 
     return (
-        <IntlProvider locale={locale} messages={pageProps.messages}>
-            <AppWrapper>
-                <Component {...pageProps} />
-            </AppWrapper>
-        </IntlProvider>
+        <AppWrapper>
+            <Component {...pageProps} />
+        </AppWrapper>
     )
 }
 
-export default App;
+export default appWithI18Next(App, ni18nConfig);

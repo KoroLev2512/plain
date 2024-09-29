@@ -1,6 +1,5 @@
 import React from 'react';
-import {useTranslation} from "react-i18next";
-import i18next from 'i18next'
+import { useTranslation } from "react-i18next";
 
 import styles from '@/entities/LanguageFlag/styles.module.scss';
 
@@ -10,7 +9,7 @@ export default function LanguageFlag() {
     const languages = [
         {
             code: 'en',
-            country_code: 'gb',
+            country_code: 'en',
             name: 'English',
             icon: '/icons/eng.png'
         },
@@ -22,15 +21,15 @@ export default function LanguageFlag() {
         },
     ]
 
-    const {i18n} = useTranslation();
+    const { t, i18n } = useTranslation();
 
     const [isOpen, setIsOpen] = React.useState(false);
     const languageDiv = React.useRef(null);
-
+    
     const [currLanguage, setCurrLanguage] = React.useState("");
 
     React.useEffect(() => {
-        setCurrLanguage(i18n.language)
+        setCurrLanguage(i18n.language);
 
         document.addEventListener("click", handleClickOutside);
 
@@ -49,19 +48,12 @@ export default function LanguageFlag() {
 
     return (
         <div className={styles.flags} ref={languageDiv}>
-            <div className={styles.text + (isOpen ? ` ${styles.disabled}` : "")} onClick={(e) => {
-                e.stopPropagation;
-                setIsOpen(true)
-            }}>
-                <p>language</p>
+            <div className={styles.text + (isOpen ? ` ${styles.disabled}` : "")} onClick={(e) => {e.stopPropagation; setIsOpen(true)}}>
+                <p>{t("language")}</p>
             </div>
             <div className={styles.languages + (isOpen ? "" : ` ${styles.disabled}`)}>
-                {languages.map(({code, name, country_code, icon}) => (
-                    <p key={code} onClick={(e) => {
-                        e.stopPropagation;
-                        i18next.changeLanguage(code);
-                        setCurrLanguage(code)
-                    }} className={currLanguage == code ? `${styles.active}` : ""}>{code}</p>
+                {languages.map(({ code, name, country_code, icon }) => (
+                    <p key={code} onClick={(e) => {e.stopPropagation; i18n.changeLanguage(code); setCurrLanguage(code)}} className={currLanguage == code ? `${styles.active}` : ""}>{code}</p>
                 ))}
             </div>
         </div>

@@ -1,4 +1,6 @@
 {
+  "Loading": "Loading...",
+
   "Title: What is Plain?": "What is Plain?",
   "Description: What is Plain?": "Plain is your friendly artificial intelligence-based travel assistant. We've trained it to whip up awesome travel plans based on your interests. Think of it as having your own personal travel guru who can create a tailored itinerary for you in just a few minutes!",
 
@@ -22,8 +24,8 @@
 
   "Got any questions?": "Got any questions?\nMail us!\nMichael@plaintrips.com",
 
-  "About": "about",
-  "Language": "language",
+  "about us": "about us",
+  "language": "language",
 
   "Enter destination": "Enter destination",
   "Destination example": "e.g. Rome or Florida",

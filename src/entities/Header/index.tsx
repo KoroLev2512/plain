@@ -1,14 +1,11 @@
 import React from 'react';
 import Link from 'next/link';
 import LanguageFlag from "@/entities/LanguageFlag";
-
 import styles from "./styles.module.scss";
-
-// interface IProps {
-//     language: string;
-// }
+import { useTranslation } from 'react-i18next';
 
 export const Header = () => {
+    const { t } = useTranslation();
     return (
         <div className={styles.wrapper}>
             <Link href={'/'} className={styles.logo}>
@@ -22,7 +19,7 @@ export const Header = () => {
                     <LanguageFlag/>
                 </div>
                 <Link href={'/about'} className={styles.button_item}>
-                    <div>about us</div>
+                    <div>{t("about us")}</div>
                 </Link>
             </div>
         </div>
