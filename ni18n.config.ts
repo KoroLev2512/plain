@@ -1,7 +1,9 @@
-const supportedLngs = ['en', 'ru']
+const supportedLngs = ['en', 'ru'];
 
 export const ni18nConfig = {
-    defaultLanguage: 'en',
+    defaultLocale: 'en',
     supportedLngs,
     ns: ['common'],
-}
+};
+
+export default ni18nConfig;
