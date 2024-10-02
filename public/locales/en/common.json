@@ -45,5 +45,7 @@
 
   "Tooltip 1": "Please choose the number of days you will spend travelling",
   "Tooltip 2": "If you’re visiting the destination for the first time, you might be interested in popular locations. Experienced traveller might go for hidden gems or a mix of both",
-  "Tooltip 3": "Helps you to explore the area around a small town"
+  "Tooltip 3": "Helps you to explore the area around a small town",
+
+  "Content": "This is a demo version"
 }
