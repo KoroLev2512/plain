@@ -1,15 +1,15 @@
-import React, { Suspense } from "react";
-import { HomePage } from "@/features/layouts/home/";
-import { useTranslation } from "react-i18next";
-import "i18n";
+import React, {Suspense} from "react";
+import {HomePage} from "@/features/layouts/home/";
+import {useTranslation} from "react-i18next";
 
 const App = () => {
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
     return (
-        <Suspense fallback={<div>Loading...</div>}>
-            <HomePage name="" t={t} language={i18n.language} />
+        <Suspense fallback={<div>{t("Loading")}</div>}>
+            <HomePage name=""/>
         </Suspense>
     )
 }
+
 
 export default App;

@@ -1,6 +1,10 @@
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
+    i18n: {
+      defaultLocale: 'en',
+      locales: ['en', 'ru'],
+    },
     trailingSlash: true,
     output: "standalone",
     reactStrictMode: false,
@@ -21,4 +25,5 @@ const nextConfig = {
     },
 }
 
-export default nextConfig;
+
+module.exports = nextConfig;
